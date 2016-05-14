@@ -1,0 +1,26 @@
+%h1 Addresses.csv
+
+= paginate @addresses
+
+%table
+  %thead
+    %tr
+      %th Node
+      %th Address
+      %th Icij
+      %th Valid until
+      %th Country codes
+      %th Countries
+      %th Sourceid
+  %tbody
+    - @addresses.each do |address|
+      %tr
+        %td= link_to address.node_id, address
+        %td= address.address
+        %td= address.icij_id
+        %td= address.valid_until
+        %td= address.country_codes
+        %td= address.countries
+        %td= address.sourceID
+
+= paginate @addresses

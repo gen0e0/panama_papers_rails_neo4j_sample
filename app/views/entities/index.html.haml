@@ -1,0 +1,26 @@
+%h1 Entities.csv
+
+= paginate @entities
+
+%table
+  %thead
+    %tr
+      %th Node
+      %th Name
+      %th Jurisdiction
+      %th Address
+      %th Status
+      %th Service provider
+      %th Countries
+  %tbody
+    - @entities.each do |entity|
+      %tr
+        %td= link_to entity.node_id, entity
+        %td= entity.name
+        %td= entity.jurisdiction
+        %td= entity.address
+        %td= entity.status
+        %td= entity.service_provider
+        %td= entity.countries
+
+= paginate @entities

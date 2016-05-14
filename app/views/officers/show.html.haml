@@ -1,0 +1,26 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @officer.name
+%p
+  %b Icij:
+  = @officer.icij_id
+%p
+  %b Valid until:
+  = @officer.valid_until
+%p
+  %b Country codes:
+  = @officer.country_codes
+%p
+  %b Countries:
+  = @officer.countries
+%p
+  %b Node:
+  = @officer.node_id
+%p
+  %b Sourceid:
+  = @officer.sourceID
+
+
+= link_to 'Back', officers_path

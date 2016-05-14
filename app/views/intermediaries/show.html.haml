@@ -1,0 +1,32 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @intermediary.name
+%p
+  %b Internal:
+  = @intermediary.internal_id
+%p
+  %b Address:
+  = @intermediary.address
+%p
+  %b Valid until:
+  = @intermediary.valid_until
+%p
+  %b Country codes:
+  = @intermediary.country_codes
+%p
+  %b Countries:
+  = @intermediary.countries
+%p
+  %b Status:
+  = @intermediary.status
+%p
+  %b Node:
+  = @intermediary.node_id
+%p
+  %b Sourceid:
+  = @intermediary.sourceID
+
+
+= link_to 'Back', intermediaries_path

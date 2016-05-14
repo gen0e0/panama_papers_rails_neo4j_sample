@@ -1,0 +1,66 @@
+%p#notice= notice
+%p
+  %strong Node:
+  = @entity.node_id
+%p
+  %strong Name:
+  = @entity.name
+%p
+  %strong Original name:
+  = @entity.original_name
+%p
+  %strong Former name:
+  = @entity.former_name
+%p
+  %strong Jurisdiction:
+  = @entity.jurisdiction
+%p
+  %strong Jurisdiction description:
+  = @entity.jurisdiction_description
+%p
+  %strong Company type:
+  = @entity.company_type
+%p
+  %strong Address:
+  = @entity.address
+%p
+  %strong Internal:
+  = @entity.internal_id
+%p
+  %strong Incorporation date:
+  = @entity.incorporation_date
+%p
+  %strong Inactivation date:
+  = @entity.inactivation_date
+%p
+  %strong Struck off date:
+  = @entity.struck_off_date
+%p
+  %strong Dorm date:
+  = @entity.dorm_date
+%p
+  %strong Status:
+  = @entity.status
+%p
+  %strong Service provider:
+  = @entity.service_provider
+%p
+  %strong IbcRUC:
+  = @entity.ibcRUC
+%p
+  %strong Country codes:
+  = @entity.country_codes
+%p
+  %strong Countries:
+  = @entity.countries
+%p
+  %strong Note:
+  = @entity.note
+%p
+  %strong Valid until:
+  = @entity.valid_until
+%p
+  %strong Source:
+  = @entity.sourceID
+
+= link_to 'Back', entities_path

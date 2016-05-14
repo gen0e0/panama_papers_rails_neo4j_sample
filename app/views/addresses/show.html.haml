@@ -1,0 +1,24 @@
+%p#notice= notice
+%p
+  %strong Address:
+  = @address.address
+%p
+  %strong Icij:
+  = @address.icij_id
+%p
+  %strong Valid until:
+  = @address.valid_until
+%p
+  %strong Country codes:
+  = @address.country_codes
+%p
+  %strong Countries:
+  = @address.countries
+%p
+  %strong Node:
+  = @address.node_id
+%p
+  %strong Source:
+  = @address.sourceID
+
+= link_to 'Back', addresses_path

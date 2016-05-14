@@ -1,0 +1,30 @@
+%h1 Intermediaries.csv
+
+= paginate @intermediaries
+%table
+  %thead
+    %tr
+      %th Node
+      %th Name
+      %th Internal
+      %th Address
+      %th Valid until
+      %th Country codes
+      %th Countries
+      %th Status
+      %th Sourceid
+
+  %tbody
+    - @intermediaries.each do |intermediary|
+      %tr
+        %td= link_to intermediary.node_id, intermediary
+        %td= intermediary.name
+        %td= intermediary.internal_id
+        %td= intermediary.address
+        %td= intermediary.valid_until
+        %td= intermediary.country_codes
+        %td= intermediary.countries
+        %td= intermediary.status
+        %td= intermediary.sourceID
+
+= paginate @intermediaries

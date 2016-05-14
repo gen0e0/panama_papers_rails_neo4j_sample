@@ -1,0 +1,27 @@
+%h1 Officers.csv
+
+= paginate @officers
+
+%table
+  %thead
+    %tr
+      %th
+      %th Name
+      %th Icij
+      %th Valid until
+      %th Country codes
+      %th Countries
+      %th Sourceid
+
+  %tbody
+    - @officers.each do |officer|
+      %tr
+        %td= link_to officer.node_id, officer
+        %td= officer.name
+        %td= officer.icij_id
+        %td= officer.valid_until
+        %td= officer.country_codes
+        %td= officer.countries
+        %td= officer.sourceID
+
+= paginate @officers
